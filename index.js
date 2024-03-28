@@ -108,26 +108,26 @@ function templatizeString(text, parameters) {
 
 function getStatusText(color) {
   return color == "nodata"
-    ? "No Data Available"
+    ? "Данные недоступны"
     : color == "success"
-    ? "Fully Operational"
+    ? "Полносью работоспособен"
     : color == "failure"
-    ? "Major Outage"
+    ? "Крупный сбой"
     : color == "partial"
-    ? "Partial Outage"
-    : "Unknown";
+    ? "Частичное отключение"
+    : "Неизвестно";
 }
 
 function getStatusDescriptiveText(color) {
   return color == "nodata"
-    ? "No Data Available: Health check was not performed."
+    ? "Данные недоступны: проверка работоспособности не проводилась."
     : color == "success"
-    ? "No downtime recorded on this day."
+    ? "Сбоев в этот день не зафиксировано."
     : color == "failure"
-    ? "Major outages recorded on this day."
+    ? "Были зафиксированны крупные сбои."
     : color == "partial"
-    ? "Partial outages recorded on this day."
-    : "Unknown";
+    ? "Были зафиксированны частичные."
+    : "Неизвестно";
 }
 
 function getTooltip(key, date, quartile, color) {
