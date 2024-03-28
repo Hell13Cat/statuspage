@@ -1,14 +1,17 @@
 <html>
   <head>
-    <title>Status Page</title>
+    <title>Nyan Project - Статус сайтов</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
+    <meta property="og:title" content="Nyan Project - Статус сайтов"/>
+    <meta property="og:url" content="https://status.nyan.pw/" />
+    <meta property="og:description" content="Посмотреть состояние сайтов Nyan Project"/>
   </head>
   <body>
     <div class="pageContainer">
       <div class="headline">
-        <span> System Status Nyan Project </span>
+        <span> Nyan Project - Статус сайтов </span>
       </div>
       <div id="reports" class="reportContainer"></div>
       <div id="tooltip" class="tooltip" style="opacity: 0">
@@ -36,13 +39,13 @@
           </div>
           <div class="statusSubtitle">
             <div class="sectionUrl"><a href="$url">$url</a></div>
-            <div class="statusUptime">$upTime in the last 30 days</div>
+            <div class="statusUptime">$upTime за последние 30 дней</div>
           </div>
         </div>
       </div>
     </div>
     <footer>
-      Forked from
+      Форк из 
       <a href="https://github.com/statsig-io/statuspage/"
         >Statsig's Open-Source Status Page</a
       >.
